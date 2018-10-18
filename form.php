@@ -4,11 +4,11 @@
 
 <body>
 <div><?php
-if (!empty($_GET['name']) && !empty($_GET['message'])) {
-    echo 'Thank you for your message, ' . $_GET['name'] . '<br><br>';
+if (!empty($_POST['name']) && !empty($_POST['message'])) {
+    echo 'Thank you for your message, ' . $_POST['name'] . '<br><br>';
 }
 ?></div>
-	<form method="GET">
+	<form method="POST">
 		Name:
 		<br>
 		<input name="name" />
